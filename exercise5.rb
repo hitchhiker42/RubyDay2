@@ -1,8 +1,9 @@
-def temp_conv
-	puts "Whats the temperature?"
-	ftemp = gets.chomp.to_i
-	ctemp = (ftemp - 32) * (5.0/9.0)
+puts "Whats the temperature in fahrenheit?"
+ftemp = gets.chomp.to_i
+
+def temp_conv(tempf)
+	ctemp = (tempf - 32) * (5.0/9.0)
 	puts "And the temperature in celsius is #{ctemp}"
 end
 
-temp_conv
+temp_conv(ftemp)
