@@ -12,7 +12,7 @@ def cust_list (groc_list)
 
 	groc_list = groc_list.sort
 
-	groc_list.each {|x| puts ("* " + x)}
+	groc_list.map! {|x| puts ("* " + x)}
 	puts groc_list.count
 	puts groc_list[1]
 
